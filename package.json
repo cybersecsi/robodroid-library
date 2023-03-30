@@ -1,0 +1,21 @@
+{
+  "name": "robodroid-library",
+  "version": "0.0.0",
+  "description": "Curated list of scripts for RoboDroid to run pre-defined behaviors.",
+  "main": "index.js",
+  "author": "Angelo Delicato <delicato.angelo@gmail.com>",
+  "license": "GPL-3.0",
+  "scripts": {
+    "prepare": "npm run build",
+    "build2": "node compile.js",
+    "build": "frida-compile library/index.ts -x -o _agent.js -S -c",
+    "watch": "frida-compile agent/index.ts -o _agent.js -w"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^18.3.1",
+    "@types/json-templates": "^3.0.0",
+    "@types/node": "^18.15.11",
+    "frida-compile": "^16.1.8",
+    "json-templates": "^4.2.0"
+  }
+}

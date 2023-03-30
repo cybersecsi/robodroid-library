@@ -1,0 +1,10 @@
+id: Template ID
+
+info:
+  name: The name of the template
+  description: Just a brief description for the related script
+  package-name: com.example.robodroid
+
+inputs:
+  - name: Input 1
+    description: Description for this input
