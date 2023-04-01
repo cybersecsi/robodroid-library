@@ -1,10 +1,11 @@
-id: Template ID
+id: Gmail Account Setup
 
 info:
-  name: The name of the template
-  description: Just a brief description for the related script
-  package-name: com.example.robodroid
+  package_name: com.google.android.gm
+  description: Setup a Google account on Gmail
 
 inputs:
-  - name: Input 1
-    description: Description for this input
+  - id: email-address
+    description: Email address
+  - id: password
+    description: Password

@@ -1,10 +1,9 @@
-id: Template ID
+id: chrome-open-website
 
 info:
-  name: The name of the template
+  package_name: com.example.robodroid
   description: Just a brief description for the related script
-  package-name: com.example.robodroid
 
 inputs:
-  - name: Input 1
+  - id: Input 1
     description: Description for this input

@@ -10,13 +10,13 @@ Java.perform(function () {
 
   // Simulate text input for the email address and password
   var emailField = Java.use("com.google.android.gms.common.SignInButton");
-  emailField.setText.implementation = function (text: string) {
+  emailField.setText.implementation = function (text) {
     console.log("[*] Setting email address to: " + text);
     this.setText(text);
   };
 
   var passwordField = Java.use("com.google.android.gms.common.SignInButton");
-  passwordField.setText.implementation = function (text: string) {
+  passwordField.setText.implementation = function (text) {
     console.log("[*] Setting password to: " + text);
     this.setText(text);
   };

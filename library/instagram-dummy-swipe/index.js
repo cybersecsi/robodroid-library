@@ -1,6 +1,6 @@
 Java.perform(function () {
   // Get a reference to the main activity
-  var MainActivity = Java.use('com.instagram.mainactivity.MainActivity');
+  var MainActivity = Java.use("com.instagram.mainactivity.MainActivity");
 
   // Get a reference to the view pager
   var viewPager = MainActivity.A00.value.A0Q.A00;

@@ -6,10 +6,7 @@
   "author": "Angelo Delicato <delicato.angelo@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
-    "prepare": "npm run build",
-    "build2": "node compile.js",
-    "build": "frida-compile library/index.ts -x -o _agent.js -S -c",
-    "watch": "frida-compile agent/index.ts -o _agent.js -w"
+    "build": "node compile.js"
   },
   "devDependencies": {
     "@types/frida-gum": "^18.3.1",
