@@ -1,0 +1,23 @@
+id: k9-mail-account-setup
+
+info:
+  package_name: com.fsck.k9
+  description: Setup an email account on K-9 Mail
+  permissions:
+    - android.permission.READ_CONTACTS
+
+inputs:
+  - id: email
+    description: Email address
+  - id: password
+    description: Password
+  - id: incoming-server
+    description: IMAP or POP3 server
+  - id: incoming-port
+    description: IMAP or POP3 port
+  - id: outgoing-server
+    description: STMP server
+  - id: outgoing-port
+    description: SMTP port
+
+outputs: []
