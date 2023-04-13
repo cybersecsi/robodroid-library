@@ -1,10 +1,36 @@
 {
+  "include": [
+    "src"
+  ],
+  "ts-node": {
+    "files": true,
+    "require": ["tsconfig-paths/register"]
+  },
   "compilerOptions": {
     "target": "es2020",
     "lib": ["es2020"],
-    "allowJs": true,
-    "noEmit": true,
     "strict": true,
-    "esModuleInterop": true
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "declaration": false,
+    "moduleResolution": "node",
+    "useUnknownInCatchVariables": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "strictPropertyInitialization":false,
+    "alwaysStrict": true,
+    "outDir": "dist",
+    "typeRoots": ["node_modules/@types"],
+    "resolveJsonModule": true,
+    "paths": {
+      "@robodroid/*": ["./src/*"]
+    }
   }
 }

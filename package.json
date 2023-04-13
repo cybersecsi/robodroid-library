@@ -3,16 +3,21 @@
   "version": "0.0.0",
   "description": "Curated list of scripts for RoboDroid to run pre-defined behaviors.",
   "main": "index.js",
-  "author": "Angelo Delicato <delicato.angelo@gmail.com>",
+  "author": "Angelo Delicato <thelicato@duck.com>",
   "license": "GPL-3.0",
   "scripts": {
-    "build": "node compile.js"
+    "prepare": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
+    "compile": "frida-compile dist/index.js -o dist/robodroid-library.js",
+    "watch": "frida-compile dist/index.js -o dist/robodroid-library.js -w",
+    "copy-files": "copyfiles -u 1 src/**/*.yaml dist",
+    "build": "yarn prepare && yarn compile && yarn copy-files"
   },
   "devDependencies": {
     "@types/frida-gum": "^18.3.1",
-    "@types/json-templates": "^3.0.0",
     "@types/node": "^18.15.11",
-    "frida-compile": "^16.1.8",
-    "json-templates": "^4.2.0"
+    "copyfiles": "^2.4.1",
+    "frida-compile": "^10",
+    "tsc-alias": "^1.8.5",
+    "typescript": "^5.0.4"
   }
 }
