@@ -1,0 +1,13 @@
+id: firefox-android-open-and-download
+
+info:
+  package_name: org.mozilla.firefox
+  description: Open a link and Download the file with Mozilla Firefox (Fenix)
+
+inputs:
+  - id: link
+    description: The link to open/download
+
+outputs:
+  - id: filePath
+    description: The full path where the file is saved
