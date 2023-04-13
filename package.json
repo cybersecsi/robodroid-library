@@ -1,7 +1,7 @@
 {
   "name": "robodroid-library",
   "version": "0.0.0",
-  "description": "Curated list of scripts for RoboDroid to run pre-defined behaviors.",
+  "description": "Curated list of Frida scripts for RoboDroid to run pre-defined behaviors.",
   "main": "index.js",
   "author": "Angelo Delicato <thelicato@duck.com>",
   "license": "GPL-3.0",
@@ -10,7 +10,7 @@
     "compile": "frida-compile dist/index.js -o dist/robodroid-library.js",
     "watch": "frida-compile dist/index.js -o dist/robodroid-library.js -w",
     "copy-files": "copyfiles -u 1 src/**/*.yaml dist",
-    "build": "yarn prepare && yarn compile && yarn copy-files"
+    "build": "yarn prepare && yarn compile && yarn copy-files && rm dist/index.js"
   },
   "devDependencies": {
     "@types/frida-gum": "^18.3.1",
