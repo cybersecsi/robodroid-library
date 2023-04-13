@@ -1,6 +1,6 @@
 {
   "name": "robodroid-library",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Curated list of Frida scripts for RoboDroid to run pre-defined behaviors.",
   "main": "index.js",
   "author": "Angelo Delicato <thelicato@duck.com>",
