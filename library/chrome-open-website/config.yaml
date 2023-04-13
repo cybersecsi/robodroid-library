@@ -1,9 +1,0 @@
-id: chrome-open-website
-
-info:
-  package_name: com.example.robodroid
-  description: Just a brief description for the related script
-
-inputs:
-  - id: Input 1
-    description: Description for this input
