@@ -1,0 +1,11 @@
+id: k9-mail-refresh-and-get-link
+
+info:
+  package_name: com.fsck.k9
+  description: K-9 Continuous refresh, open mail and get link
+
+inputs: []
+
+outputs:
+  - id: link
+    description: The link found in the email
