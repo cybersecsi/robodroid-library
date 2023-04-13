@@ -6,7 +6,7 @@ on:
       - "v*.*.*"
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,9 +27,12 @@ jobs:
         uses: a7ul/tar-action@v1.1.0
         id: compress
         with:
+          cwd: ./dist
           command: c
           files: |
-            ./dist
+            ./behaviors
+            ./utils
+            ./robodroid-library.js
           outPath: robodroid-library-${{github.ref_name}}.tar.gz
       - name: Release
         uses: softprops/action-gh-release@v1
