@@ -1,22 +1,29 @@
 <h1 align="center">
   <br>
-    <img src="https://raw.githubusercontent.com/cybersecsi/robodroid-library/main/logo.png" alt= "robodroid" width="300px">
+    <img src="https://raw.githubusercontent.com/cybersecsi/robodroid-library/main/logo.png" alt= "robodroid" width="200px">
 </h1>
 <p align="center">
     <b>RoboDroid Library</b>
 <p>
+
+<p align="center">
+  <img src="https://github.com/cybersecsi/robodroid-library/actions/workflows/release.yaml/badge.svg"/>
+    <a href="https://github.com/cybersecsi/robodroid-library/blob/main/README.md"><img src="https://img.shields.io/badge/Documentation-complete-green.svg?style=flat"></a>
+  <a href="https://github.com/cybersecsi/robodroid-library/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-GPL3-blue.svg"></a>
+</p>
+
 RoboDroid Library is a curated list of Frida scripts for RoboDroid to run pre-defined behaviors. It is tailored for CyberRange usage to simulate the behavior of a human-like smartphone user. The library contains pre-defined behaviors that can be run on a target device to test its security posture.
 
 <!-- omit in toc -->
-## Table of Contents
-- [Context](#context)
-- [Overview](#overview)
-- [Behaviors](#behaviors)
-- [Credits](#credits)
-- [License](#license)
+## 📋 Table of Contents
+- [📱 Context](#-context)
+- [⚡ Overview](#-overview)
+- [🚀 Behaviors](#-behaviors)
+- [📚 Credits](#-credits)
+- [🪪 License](#-license)
 
 
-## Context
+## 📱 Context
 Mobile devices have become ubiquitous in today's world. People use smartphones for almost every aspect of their lives, including banking, shopping, and communication. As a result, mobile devices are now a primary target for cybercriminals.
 
 However, the security of mobile devices is often overlooked in cybersecurity training and testing environments. This can leave organizations vulnerable to attacks that exploit the weaknesses of mobile devices. Therefore, it is important to introduce mobile components in next-generation cyber-ranges to adapt to the current world that is more and more smartphone-addicted.
@@ -24,14 +31,14 @@ However, the security of mobile devices is often overlooked in cybersecurity tra
 **RoboDroid Library** is designed to help fill this gap by providing a set of tools that can simulate human-like smartphone behavior. 
 These scripts are meant to be run with the actual CLI tool [RoboDroid](https://github.com/cybersecsi/robodroid)
 
-## Overview
+## ⚡ Overview
 RoboDroid Library is a curated list of Frida scripts that can be used to simulate the behavior of a human-like smartphone user. The library is designed to be used in CyberRange environments, where it can be used to test the security posture of mobile devices and applications.
 
 The scripts in RoboDroid Library are written using the Frida framework. Frida is a dynamic instrumentation toolkit that can be used to inject code into running processes. This allows the scripts in RoboDroid Library to interact with the target device in real-time, as if they were being run by a human user.
 
 We hope that RoboDroid Library will be a valuable resource for students, cybersecurity professionals and researchers.
 
-## Behaviors
+## 🚀 Behaviors
 Currently all the available behaviors are created using **open-source applications** since it could be painful to use closed-source applications.
 
 | **Behavior** | **Description** |
@@ -42,10 +49,10 @@ Currently all the available behaviors are created using **open-source applicatio
 
 Users are encouraged to create their own scripts using the Frida framework and add them to the library through a Pull Request.
 
-## Credits
+## 📚 Credits
 
 Developed by Angelo Delicato [@SecSI](https://secsi.io)
 
-## License
+## 🪪 License
 
-_robodroid-library_ is released under the [GPL-3.0 LICENSE](https://github.com/cybersecsi/robodroid-library/blob/main/LICENSE)
+_RoboDroid Library_ is released under the [GPL-3.0 LICENSE](https://github.com/cybersecsi/robodroid-library/blob/main/LICENSE)
